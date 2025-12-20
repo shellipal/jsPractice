@@ -44,13 +44,62 @@
 //Booleans.....................
 //...homework3...............
 
-let isJsProgrammingLanguage = true;
-let isJsHard = false;
-let favNumb = 40;
+// let isJsProgrammingLanguage = true;
+// let isJsHard = false;
+// let favNumb = 40;
 
-console.log(isJsProgrammingLanguage);
-console.log(isJsHard);
+// console.log(isJsProgrammingLanguage);
+// console.log(isJsHard);
 
-console.log(favNumb + undefined);
+// console.log(favNumb + undefined);
 
 //............................
+//...Homework4...............
+
+// var firstFavNumb = 4;
+// var secondFavNum = 8;
+// console.log(firstFavNumb > secondFavNum);
+// console.log(firstFavNumb < secondFavNum);
+// console.log(firstFavNumb >= secondFavNum);
+// console.log(firstFavNumb <= secondFavNum);
+// console.log("hello");
+// console.log(firstFavNumb === secondFavNum);
+// console.log(firstFavNumb == secondFavNum);
+// console.log(firstFavNumb !== secondFavNum);
+// console.log(firstFavNumb != secondFavNum);
+//...............................................
+
+//strings....................
+
+let firstname = "Shelli";
+let secondname = "     Web dev    ";
+//concate...
+// let fullname = firstname + " " + secondname;
+let fullname = firstname.concat(secondname);
+console.log(fullname);
+
+//append..................
+firstname += " Software developer";
+console.log(firstname);
+
+//length.......
+console.log(firstname.length);
+
+//Cases..........
+console.log(firstname.toLowerCase());
+console.log(secondname.toUpperCase());
+
+//slice...........
+console.log(secondname.slice(0, 2));
+console.log(secondname.slice(2, 3));
+console.log(secondname.slice(3, 7));
+
+//split & join...........
+console.log(secondname.split(" ").join(" "));
+
+//includes..........
+console.log(firstname.includes("S"));
+
+//trim............
+console.log(secondname);
+console.log(secondname.trim());
