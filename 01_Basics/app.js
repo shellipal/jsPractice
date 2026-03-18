@@ -109,9 +109,22 @@
 // let desc = `this is an ramdom text`;
 // console.log(desc);
 
-let firstname = "Shelli";
-let lastname = "pal";
+// let firstname = "Shelli";
+// let lastname = "pal";
 
-let fullname = `${firstname} ${lastname}`;
+// let fullname = `${firstname} ${lastname}`;
 
-console.log(fullname);
+// console.log(fullname);
+
+// -------------exercise------------------------------------------
+
+let favActorFAirstName = "lakshay";
+let favActorLastName = "chaudhary";
+
+let fullName = `${favActorFAirstName} ${favActorLastName}`;
+console.log(fullName);
+
+let upperCase = fullName.toUpperCase();
+
+let message = `my favorite actor is ${upperCase}`;
+console.log(message);
