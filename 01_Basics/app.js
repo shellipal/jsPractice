@@ -71,35 +71,47 @@
 
 //strings....................
 
-let firstname = "Shelli";
-let secondname = "     Web dev    ";
+// let firstname = "Shelli";
+// let secondname = " Web dev ";
 //concate...
 // let fullname = firstname + " " + secondname;
-let fullname = firstname.concat(secondname);
-console.log(fullname);
+// let fullname = firstname.concat(secondname);
+// console.log(fullname);
 
 //append..................
-firstname += " Software developer";
-console.log(firstname);
+// firstname += " Software developer";
+// console.log(firstname);
 
 //length.......
-console.log(firstname.length);
+// console.log(firstname.length);
 
 //Cases..........
-console.log(firstname.toLowerCase());
-console.log(secondname.toUpperCase());
+// console.log(firstname.toLowerCase());
+// console.log(secondname.toUpperCase());
 
 //slice...........
-console.log(secondname.slice(0, 2));
-console.log(secondname.slice(2, 3));
-console.log(secondname.slice(3, 7));
+// console.log(secondname.slice(0, 2));
+// console.log(secondname.slice(2, 3));
+// console.log(secondname.slice(3, 7));
 
 //split & join...........
-console.log(secondname.split(" ").join(" "));
+// console.log(secondname.split(" ").join(" "));
 
 //includes..........
-console.log(firstname.includes("S"));
+// console.log(firstname.includes("S"));
 
 //trim............
-console.log(secondname);
-console.log(secondname.trim());
+// console.log(secondname);
+// console.log(secondname.trim());
+
+// ...............Backticks concept...............
+
+// let desc = `this is an ramdom text`;
+// console.log(desc);
+
+let firstname = "Shelli";
+let lastname = "pal";
+
+let fullname = `${firstname} ${lastname}`;
+
+console.log(fullname);
