@@ -118,13 +118,38 @@
 
 // -------------exercise------------------------------------------
 
-let favActorFAirstName = "lakshay";
-let favActorLastName = "chaudhary";
+// let favActorFAirstName = "lakshay";
+// let favActorLastName = "chaudhary";
 
-let fullName = `${favActorFAirstName} ${favActorLastName}`;
-console.log(fullName);
+// let fullName = `${favActorFAirstName} ${favActorLastName}`;
+// console.log(fullName);
 
-let upperCase = fullName.toUpperCase();
+// let upperCase = fullName.toUpperCase();
 
-let message = `my favorite actor is ${upperCase}`;
-console.log(message);
+// let message = `my favorite actor is ${upperCase}`;
+// console.log(message);
+
+// ---------------Type conversion----------
+// let money = "50";
+
+//convert string to number...........
+// money = parseInt(money);
+
+// console.log(money);
+// console.log(typeof money);
+
+//convert number to a string......
+
+// money = money.toString();
+// money = String(money);
+
+// console.log(money);
+// console.log(typeof money);
+
+// convert string to decimal.........
+let money = "50.456";
+
+money = parseFloat(money);
+
+console.log(money);
+console.log(typeof money);
