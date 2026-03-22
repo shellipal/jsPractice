@@ -42,44 +42,62 @@
 
 // --------------switch statement----------------
 
-let x = 0;
-let bulb;
+// let x = 0;
+// let bulb;
 
-switch (x) {
-  case 0:
-    bulb = "off";
-    console.log(bulb);
+// switch (x) {
+//   case 0:
+//     bulb = "off";
+//     console.log(bulb);
+//     break;
+//   case 1:
+//     bulb = "On";
+//     console.log(bulb);
+//     break;
+//   default:
+//     bulb = "no value found";
+//     console.log(bulb);
+// }
+
+// let day = "monday";
+
+// switch (day) {
+//   case "monday":
+//     console.log("Today is monday");
+//     break;
+//   case "Tuesday":
+//     console.log("Today is Tuesday");
+//     break;
+//   case "wednesday":
+//     console.log("Today is wednesday");
+//     break;
+//   case "Thrusday":
+//     console.log("Today is Thrusday");
+//     break;
+//   case "Friday":
+//     console.log("Today is Friday");
+//     break;
+//   case "Satuarday":
+//     console.log("Today is Satuarday");
+//     break;
+//   default:
+//     console.log("Not a valid day");
+// }
+
+// ---------switch exercise------------------------
+
+let fruit = "bananaaaaa";
+
+switch (fruit) {
+  case "banana":
+    console.log("banana is good");
     break;
-  case 1:
-    bulb = "On";
-    console.log(bulb);
+  case "orange":
+    console.log("i am not a fan of oranges");
+    break;
+  case "apple":
+    console.log("How you like them apples?");
     break;
   default:
-    bulb = "no value found";
-    console.log(bulb);
-}
-
-let day = "monday";
-
-switch (day) {
-  case "monday":
-    console.log("Today is monday");
-    break;
-  case "Tuesday":
-    console.log("Today is Tuesday");
-    break;
-  case "wednesday":
-    console.log("Today is wednesday");
-    break;
-  case "Thrusday":
-    console.log("Today is Thrusday");
-    break;
-  case "Friday":
-    console.log("Today is Friday");
-    break;
-  case "Satuarday":
-    console.log("Today is Satuarday");
-    break;
-  default:
-    console.log("Not a valid day");
+    console.log("i have never heard of that fruit");
 }
