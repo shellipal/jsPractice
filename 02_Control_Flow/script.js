@@ -86,18 +86,65 @@
 
 // ---------switch exercise------------------------
 
-let fruit = "bananaaaaa";
+// let fruit = "bananaaaaa";
 
-switch (fruit) {
-  case "banana":
-    console.log("banana is good");
-    break;
-  case "orange":
-    console.log("i am not a fan of oranges");
-    break;
-  case "apple":
-    console.log("How you like them apples?");
-    break;
-  default:
-    console.log("i have never heard of that fruit");
-}
+// switch (fruit) {
+//   case "banana":
+//     console.log("banana is good");
+//     break;
+//   case "orange":
+//     console.log("i am not a fan of oranges");
+//     break;
+//   case "apple":
+//     console.log("How you like them apples?");
+//     break;
+//   default:
+//     console.log("i have never heard of that fruit");
+// }
+
+//---------------For loop--------------------------
+
+// for (let i = 1; i <= 5; i++) {
+//   console.log("Hello Shelli", i);
+// }
+
+// -----------loop exercise-------------------
+
+// for (let i = 0; i <= 1000; i++) {
+//   console.log("Shelli", i);
+// }
+
+// -----------------while loop -------------
+
+// let i = 1;
+
+// while (i <= 5) {
+//   console.log("hello Shelli", i);
+//   i++;
+// }
+
+// -----while exercise--------------
+// let i = 10;
+
+// while (i <= 100) {
+//   console.log("Shelli", i);
+//   i++;
+// }
+
+// ------do while loop------------------
+
+let i = 1;
+
+do {
+  console.log("Shelli", i);
+  i++;
+} while (i <= 5);
+
+//------do while exersise--------------
+
+let s = 20;
+
+do {
+  console.log("Shelli", s);
+  s++;
+} while (s <= 400);
