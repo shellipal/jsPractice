@@ -133,18 +133,34 @@
 
 // ------do while loop------------------
 
-let i = 1;
+// let i = 1;
 
-do {
-  console.log("Shelli", i);
-  i++;
-} while (i <= 5);
+// do {
+//   console.log("Shelli", i);
+//   i++;
+// } while (i <= 5);
 
 //------do while exersise--------------
 
-let s = 20;
+// let s = 20;
 
-do {
-  console.log("Shelli", s);
-  s++;
-} while (s <= 400);
+// do {
+//   console.log("Shelli", s);
+//   s++;
+// } while (s <= 400);
+
+//----------logical operator-----------------------
+
+// 1.  logical AND (&&) ---> true if both true.
+
+// 2.  logical OR (||) ---> true if either of value is true.
+
+// 3.  logical NOT (!) ---> true if value is false and vice-versa.
+
+let password = "Shelli-pal";
+
+if (password.length >= 8 && password.includes("pal")) {
+  console.log("valid password");
+} else {
+  console.log("Invalid password");
+}
