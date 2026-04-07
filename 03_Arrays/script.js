@@ -89,20 +89,20 @@
 
 //-----------OBJECTS -->  -------------
 
-const person = {
-  firstName: "Shelli",
-  lastName: "pal",
-  age: 20,
-  location: ["planet", "Earth"],
-  isProgrammer: true,
-};
+// const person = {
+//   firstName: "Shelli",
+//   lastName: "pal",
+//   age: 20,
+//   location: ["planet", "Earth"],
+//   isProgrammer: true,
+// };
 
-delete person.firstName;
+// delete person.firstName;
 
-const arr = [];
-console.log(typeof arr);
+// const arr = [];
+// console.log(typeof arr);
 
-console.log(person);
+// console.log(person);
 // console.log(typeof person);
 
 //Accessing items from our objects.....................
@@ -113,4 +113,22 @@ console.log(person);
 // console.log(person.location);
 // console.log(person.isProgrammer);
 
-console.log(person["firstName"]);
+// console.log(person["firstName"]);
+
+// ---------object exercise------------------
+
+const car = {
+  type: "TATA",
+  model: "2.0",
+  color: "blue",
+};
+
+console.log(car);
+
+console.log(typeof car);
+
+car.type = "Toyota";
+console.log(car);
+
+car.wheels = 4;
+console.log(car);
