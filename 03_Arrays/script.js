@@ -38,17 +38,17 @@
 
 //----methods--------------
 
-const fruits = [
-  "apples",
-  "pomegranate",
-  "mango",
-  "strawberries",
-  "pineapple",
-  "grapes",
-];
+// const fruits = [
+//   "apples",
+//   "pomegranate",
+//   "mango",
+//   "strawberries",
+//   "pineapple",
+//   "grapes",
+// ];
 
 //----------push-------------------------
-console.log(fruits);
+// console.log(fruits);
 // console.log(fruits.length);
 
 // fruits.push("Banana");
@@ -73,16 +73,44 @@ console.log(fruits);
 // console.log(totalFruits);
 
 //--------------includes------------------
-const pl = ["js", "Golang", "python", "PHP"];
-const numbers = [3, 5, 2, 6, 7];
+// const pl = ["js", "Golang", "python", "PHP"];
+// const numbers = [3, 5, 2, 6, 7];
 
 // console.log(pl.includes("Golang"));
 // console.log(pl.join("-"));
 // console.log(pl.reverse());
 
 // -------------slice------------
-console.log(pl.slice(0, 2));
+// console.log(pl.slice(0, 2));
 
 //-------------sort-------------------
-console.log(numbers);
-console.log(numbers.sort());
+// console.log(numbers);
+// console.log(numbers.sort());
+
+//-----------OBJECTS -->  -------------
+
+const person = {
+  firstName: "Shelli",
+  lastName: "pal",
+  age: 20,
+  location: ["planet", "Earth"],
+  isProgrammer: true,
+};
+
+delete person.firstName;
+
+const arr = [];
+console.log(typeof arr);
+
+console.log(person);
+// console.log(typeof person);
+
+//Accessing items from our objects.....................
+
+// console.log(person.firstName);
+// console.log(person.lastName);
+// console.log(person.age);
+// console.log(person.location);
+// console.log(person.isProgrammer);
+
+console.log(person["firstName"]);
