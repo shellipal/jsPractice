@@ -117,18 +117,53 @@
 
 // ---------object exercise------------------
 
-const car = {
-  type: "TATA",
-  model: "2.0",
-  color: "blue",
-};
+// const car = {
+//   type: "TATA",
+//   model: "2.0",
+//   color: "blue",
+// };
 
-console.log(car);
+// console.log(car);
 
-console.log(typeof car);
+// console.log(typeof car);
 
-car.type = "Toyota";
-console.log(car);
+// car.type = "Toyota";
+// console.log(car);
 
-car.wheels = 4;
-console.log(car);
+// car.wheels = 4;
+// console.log(car);
+
+//  -------------function---------------
+
+// function greet() {
+//   console.log("hello from a function");
+// }
+
+//call , run , execute...................
+
+// greet();
+// greet();
+// greet();
+
+function sayHello(name) {
+  console.log(`hello ${name}`);
+}
+
+// sayHello("Shelli");
+// sayHello("Ashish");
+// sayHello("king");
+
+//------return -> function----------------
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(10, 20));
+const result = add(20, 30);
+const result1 = add(30, 40);
+const result2 = add(40, 50);
+const result3 = add(50, 60);
+console.log(result);
+console.log(result1);
+console.log(result2);
+console.log(result3);
