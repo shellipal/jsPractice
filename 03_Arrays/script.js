@@ -169,9 +169,22 @@
 // console.log(result3);
 
 //-------exercise-----------------------
-function myFunction(x, y) {
-  return x * y;
-}
+// function myFunction(x, y) {
+//   return x * y;
+// }
 
-const result = myFunction(4, 5);
-console.log(result);
+// const result = myFunction(4, 5);
+// console.log(result);
+
+//-----function declaration----------------
+function sayHello(username) {
+  console.log(`hello ${username}`);
+}
+sayHello("shelli");
+
+//----------function Expression------------
+const greeting = function (user) {
+  console.log(`hello ${user}`);
+};
+
+greeting("lakshay");
