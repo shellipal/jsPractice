@@ -177,14 +177,37 @@
 // console.log(result);
 
 //-----function declaration----------------
-function sayHello(username) {
-  console.log(`hello ${username}`);
-}
-sayHello("shelli");
+// function sayHello(username) {
+//   console.log(`hello ${username}`);
+// }
+// sayHello("shelli");
 
 //----------function Expression------------
-const greeting = function (user) {
-  console.log(`hello ${user}`);
-};
+// const greeting = function (user) {
+//   console.log(`hello ${user}`);
+// };
 
-greeting("lakshay");
+// greeting("lakshay");
+
+//------------callBack function--------------------
+
+// function showCallaFunc(fn) {
+//   const value = 10;
+//   fn(value);
+// }
+
+// showCallaFunc(function (value) {
+//   console.log(value);
+// });
+
+//..........................
+function greet(name, sh) {
+  console.log(`Hello ${name}`);
+  sh();
+}
+
+// greet("shelli", sh);
+
+greet("shelli", function sh() {
+  console.log(`i am callback function`);
+});
