@@ -201,13 +201,25 @@
 // });
 
 //..........................
-function greet(name, sh) {
-  console.log(`Hello ${name}`);
-  sh();
-}
+// function greet(name, sh) {
+//   console.log(`Hello ${name}`);
+//   sh();
+// }
 
 // greet("shelli", sh);
 
-greet("shelli", function sh() {
-  console.log(`i am callback function`);
+// greet("shelli", function sh() {
+//   console.log(`i am callback function`);
+// });
+
+//---------callback exercise---------------
+
+function showCallFunc(fn) {
+  // const value = 10;
+  const value = "something else";
+  fn(value);
+}
+
+showCallFunc(function (value) {
+  console.log(value);
 });
