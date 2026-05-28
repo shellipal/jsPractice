@@ -214,12 +214,24 @@
 
 //---------callback exercise---------------
 
-function showCallFunc(fn) {
-  // const value = 10;
-  const value = "something else";
-  fn(value);
+// function showCallFunc(fn) {
+//   // const value = 10;
+//   const value = "something else";
+//   fn(value);
+// }
+
+// showCallFunc(function (value) {
+//   console.log(value);
+// });
+
+//---------------Scope------------------------------------------------
+
+let textmsg = "Hi";
+console.log(textmsg); //global..........
+
+function showtxtmsg() {
+  let textmsg = "hello"; //local variable....
+  console.log(textmsg);
 }
 
-showCallFunc(function (value) {
-  console.log(value);
-});
+showtxtmsg();
