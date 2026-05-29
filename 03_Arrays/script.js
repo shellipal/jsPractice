@@ -226,12 +226,38 @@
 
 //---------------Scope------------------------------------------------
 
-let textmsg = "Hi";
-console.log(textmsg); //global..........
+// let textmsg = "Hi";
+// console.log(textmsg); //global..........
 
-function showtxtmsg() {
-  let textmsg = "hello"; //local variable....
-  console.log(textmsg);
+// function showtxtmsg() {
+//   let textmsg = "hello"; //local variable....
+//   console.log(textmsg);
+// }
+
+// showtxtmsg();
+
+//-------Methods in js----------------------
+
+function greet() {
+  return `Hello, my name is ${person.name} & I am ${person.age} year old.`;
 }
 
-showtxtmsg();
+const person = {
+  name: "Shelli",
+  age: 20,
+  greet,
+};
+
+console.log(person.greet());
+
+//----------------------OR--------------------------------
+
+const human = {
+  name: "Shelli Pal",
+  age: 20,
+  welcome: function () {
+    return `Hello, my name is ${human.name} & i am ${human.age} years old.`;
+  },
+};
+
+console.log(human.welcome());
