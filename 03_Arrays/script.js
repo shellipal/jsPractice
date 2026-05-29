@@ -238,26 +238,48 @@
 
 //-------Methods in js----------------------
 
-function greet() {
-  return `Hello, my name is ${person.name} & I am ${person.age} year old.`;
-}
+// function greet() {
+//   return `Hello, my name is ${person.name} & I am ${person.age} year old.`;
+// }
 
-const person = {
-  name: "Shelli",
-  age: 20,
-  greet,
-};
+// const person = {
+//   name: "Shelli",
+//   age: 20,
+//   greet,
+// };
 
-console.log(person.greet());
+// console.log(person.greet());
 
 //----------------------OR--------------------------------
 
-const human = {
+// const human = {
+//   name: "Shelli Pal",
+//   age: 20,
+//   welcome: function () {
+//     return `Hello, my name is ${human.name} & i am ${human.age} years old.`;
+//   },
+// };
+
+// console.log(human.welcome());
+
+//------------JSON IN JS------------------------------------
+
+const person = {
   name: "Shelli Pal",
   age: 20,
-  welcome: function () {
-    return `Hello, my name is ${human.name} & i am ${human.age} years old.`;
+  email: "Sp@gmail.com",
+  isSubscribed: true,
+  hobbies: ["Reading", "Running"],
+  address: {
+    city: "Ghaziabad",
+    idk: true,
   },
 };
 
-console.log(human.welcome());
+//---JSON.stringify()----------
+
+const jsonString = JSON.stringify(person);
+// console.log(jsonString);
+
+const parsedObj = JSON.parse(jsonString);
+console.log(parsedObj);

@@ -1,0 +1,11 @@
+{
+    "name" : "Shelli Pal",
+    "age" : 20,
+    "email": "Sp@gmail.com",
+    "isSubscribed" : true,
+    "hobbies" : ["Reading", "Running"],
+    "address" : {
+        "city" : "Ghaziabad",
+        "idk" : true
+    }
+}
