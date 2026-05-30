@@ -285,12 +285,12 @@
 // console.log(parsedObj);
 
 //----------------Date & Time ---------------------
-const currentDate = new Date();
-console.log(currentDate);
+// const currentDate = new Date();
+// console.log(currentDate);
 
 // year, month , day , hours , minutes , seconds,milisec.....
 
-const date = new Date();
+// const date = new Date();
 
 // const year = date.getFullYear();
 // const month = date.getMonth();
@@ -314,5 +314,30 @@ const date = new Date();
 // console.log(date.toLocaleString());
 
 //------------------------------------------
-date.setDate(date.getDate() + 1);
-console.log(date);
+// date.setDate(date.getDate() + 1);
+// console.log(date);
+
+// setInterval-----------------------------------
+
+// setInterval(
+//   () => console.log(`This function will be executed every 2 seconds.`),
+//   2000,
+// );
+
+//setTimeOut---------------------------------
+
+// setTimeout(function () {
+//   console.log(`This function will be executed after 3 seconds`);
+// }, 3000);
+
+//stop the interval after 10 seconds--------------------
+
+const intervalId = setInterval(function () {
+  console.log(`this fn is being executed at the interval`);
+}, 1000);
+
+//stop-------------------------
+setInterval(function () {
+  clearInterval(intervalId);
+  console.log(`Interval Stopped`);
+}, 10000);
