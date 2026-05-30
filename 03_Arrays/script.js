@@ -264,22 +264,55 @@
 
 //------------JSON IN JS------------------------------------
 
-const person = {
-  name: "Shelli Pal",
-  age: 20,
-  email: "Sp@gmail.com",
-  isSubscribed: true,
-  hobbies: ["Reading", "Running"],
-  address: {
-    city: "Ghaziabad",
-    idk: true,
-  },
-};
+// const person = {
+//   name: "Shelli Pal",
+//   age: 20,
+//   email: "Sp@gmail.com",
+//   isSubscribed: true,
+//   hobbies: ["Reading", "Running"],
+//   address: {
+//     city: "Ghaziabad",
+//     idk: true,
+//   },
+// };
 
 //---JSON.stringify()----------
 
-const jsonString = JSON.stringify(person);
+// const jsonString = JSON.stringify(person);
 // console.log(jsonString);
 
-const parsedObj = JSON.parse(jsonString);
-console.log(parsedObj);
+// const parsedObj = JSON.parse(jsonString);
+// console.log(parsedObj);
+
+//----------------Date & Time ---------------------
+const currentDate = new Date();
+console.log(currentDate);
+
+// year, month , day , hours , minutes , seconds,milisec.....
+
+const date = new Date();
+
+// const year = date.getFullYear();
+// const month = date.getMonth();
+// const day = date.getDay();
+// const hours = date.getHours();
+// const minutes = date.getMinutes();
+// const miliseconds = date.getMilliseconds();
+// const todayDate = date.getDate();
+
+// console.log(`Year : ${year}`);
+// console.log(`month : ${month}`);
+// console.log(`Day : ${day}`);
+// console.log(`Hours : ${hours}`);
+// console.log(`Minutes : ${minutes}`);
+// console.log(`Miliseconds : ${miliseconds}`);
+// console.log(`todayDate : ${todayDate}`);
+
+//------------------------------------
+// console.log(date.toDateString());
+// console.log(date.toISOString());
+// console.log(date.toLocaleString());
+
+//------------------------------------------
+date.setDate(date.getDate() + 1);
+console.log(date);
