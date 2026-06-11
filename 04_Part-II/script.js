@@ -34,11 +34,11 @@
 
 // console.log(greet("Shelli"));
 
-greet = (username) => {
-  return `Hello ${username}`;
-};
+// greet = (username) => {
+//   return `Hello ${username}`;
+// };
 
-console.log(greet("Shelli"));
+// console.log(greet("Shelli"));
 
 //---------------example-2----------------------
 
@@ -47,23 +47,44 @@ console.log(greet("Shelli"));
 // }
 // console.log(double(2));
 
-const double = (n) => n * 2;
-console.log(double(10));
+// const double = (n) => n * 2;
+// console.log(double(10));
 
 //--------Exercise-----------------------
 
-setTimeout(() => {
-  console.log("hello");
-  setTimeout(() => {
-    console.log("hey");
-    setTimeout(() => {
-      console.log("Namaste");
-      setTimeout(() => {
-        console.log("Hi");
-        setTimeout(() => {
-          console.log("Bonjour");
-        }, 2000);
-      }, 2000);
-    }, 2000);
-  }, 2000);
-}, 2000);
+// setTimeout(() => {
+//   console.log("hello");
+//   setTimeout(() => {
+//     console.log("hey");
+//     setTimeout(() => {
+//       console.log("Namaste");
+//       setTimeout(() => {
+//         console.log("Hi");
+//         setTimeout(() => {
+//           console.log("Bonjour");
+//         }, 2000);
+//       }, 2000);
+//     }, 2000);
+//   }, 2000);
+// }, 2000);
+
+//-------------literals-----------------------------
+
+function user(name, age, work) {
+  return {
+    name,
+    age,
+    work,
+    intro: () => {
+      console.log(`My name is ${name} & i'm ${age} years old & i'm a ${work}`);
+    },
+  };
+}
+
+const shelli = user("shelli", 20, "Programmer");
+const ashu = user("ashu", 22, "Developer");
+
+console.log(shelli.intro());
+// console.log(ashu);
+
+//--------Exercise---------------------
