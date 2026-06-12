@@ -85,6 +85,36 @@ const shelli = user("shelli", 20, "Programmer");
 const ashu = user("ashu", 22, "Developer");
 
 console.log(shelli.intro());
+
 // console.log(ashu);
 
-//--------Exercise---------------------
+//--------Exercise--------------------------
+
+const a = 1;
+const b = 2;
+const c = 3;
+
+const obj = {
+  a,
+  b,
+  c,
+};
+
+console.log(obj);
+
+//-----------------------------
+
+const lib = {
+  sum: (a, b) => a + b,
+  multi: (a, b) => a * b,
+};
+
+console.log(lib.sum(2, 3));
+console.log(lib.multi(2, 3));
+
+//-----------------------------------
+function getPersion(name, age, height) {
+  return { name, age, height };
+}
+
+console.log(getPersion("shelli", 20, "100"));
