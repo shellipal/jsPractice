@@ -121,33 +121,92 @@
 
 //--------------Default function-----------------
 
-function countTo5(count) {
-  if (count === true) {
-    for (let i = 1; i <= 5; i++) {
-      console.log(`count: ${i}`);
-    }
-  }
-}
+// function countTo5(count) {
+//   if (count === true) {
+//     for (let i = 1; i <= 5; i++) {
+//       console.log(`count: ${i}`);
+//     }
+//   }
+// }
 
 // countTo5(true);
-countTo5(false);
+// countTo5(false);
 
 //----------------------
-function ratings(rate) {
-  if (rate === 5) {
-    console.log(`high ratings :)`);
-  } else if (rate === 0) {
-    console.log(`low ratings :(`);
-  }
-}
+// function ratings(rate) {
+//   if (rate === 5) {
+//     console.log(`high ratings :)`);
+//   } else if (rate === 0) {
+//     console.log(`low ratings :(`);
+//   }
+// }
 
-ratings(0);
-ratings(5);
+// ratings(0);
+// ratings(5);
 
 //------exercise------------------------
 
-function multiply(a, b = 1) {
-  return a * b;
+// function multiply(a, b = 1) {
+//   return a * b;
+// }
+
+// console.log(multiply(5));
+
+//-----Spread operator------------------------------
+
+//using functions------------
+function giveMe4(a, b, c, d) {
+  console.log("a", a);
+  console.log("b", b);
+  console.log("c", c);
+  console.log("d", d);
 }
 
-console.log(multiply(5));
+const colors = ["red", "green", "blue", "teal"];
+
+giveMe4(...colors);
+
+//using array-----------------
+const strNums = ["one", "two", "three"];
+const moreStrNums = ["four", "five", "six"];
+
+const concat = [...strNums, ...moreStrNums];
+console.log(concat);
+//-------------------
+let peoples = ["shelli", "ashu", "bhoomi"];
+const allPeoples = ["lakshay", ...peoples, "khushi"];
+
+console.log(allPeoples);
+
+//using objects---------------------------
+const obj1 = { x: 1, y: 2 };
+const obj2 = { z: 3 };
+const obj3 = { ...obj1, ...obj2 };
+
+console.log(obj3);
+//------------------
+let person = {
+  name: "huxu",
+  age: 20,
+  gender: "male",
+};
+
+const clone = { ...person, work: "programmer", location: "gp" };
+console.log(clone);
+
+//----------Exercise---------------------
+
+let arr = [1, 2, 3];
+let arr2 = [4, 5];
+
+const cloneArr = [...arr, ...arr2];
+console.log(cloneArr);
+
+//--------------------
+const user = {
+  name: "shelli",
+  age: 20,
+};
+
+const cloneuser = { ...user };
+console.log(cloneuser);
