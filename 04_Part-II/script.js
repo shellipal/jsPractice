@@ -70,51 +70,84 @@
 
 //-------------literals-----------------------------
 
-function user(name, age, work) {
-  return {
-    name,
-    age,
-    work,
-    intro: () => {
-      console.log(`My name is ${name} & i'm ${age} years old & i'm a ${work}`);
-    },
-  };
-}
+// function user(name, age, work) {
+//   return {
+//     name,
+//     age,
+//     work,
+//     intro: () => {
+//       console.log(`My name is ${name} & i'm ${age} years old & i'm a ${work}`);
+//     },
+//   };
+// }
 
-const shelli = user("shelli", 20, "Programmer");
-const ashu = user("ashu", 22, "Developer");
+// const shelli = user("shelli", 20, "Programmer");
+// const ashu = user("ashu", 22, "Developer");
 
-console.log(shelli.intro());
+// console.log(shelli.intro());
 
 // console.log(ashu);
 
 //--------Exercise--------------------------
 
-const a = 1;
-const b = 2;
-const c = 3;
+// const a = 1;
+// const b = 2;
+// const c = 3;
 
-const obj = {
-  a,
-  b,
-  c,
-};
+// const obj = {
+//   a,
+//   b,
+//   c,
+// };
 
-console.log(obj);
+// console.log(obj);
 
 //-----------------------------
 
-const lib = {
-  sum: (a, b) => a + b,
-  multi: (a, b) => a * b,
-};
+// const lib = {
+//   sum: (a, b) => a + b,
+//   multi: (a, b) => a * b,
+// };
 
-console.log(lib.sum(2, 3));
-console.log(lib.multi(2, 3));
+// console.log(lib.sum(2, 3));
+// console.log(lib.multi(2, 3));
 
 //-----------------------------------
-function getPersion(name, age, height) {
-  return { name, age, height };
+// function getPersion(name, age, height) {
+//   return { name, age, height };
+// }
+
+// console.log(getPersion("shelli", 20, "100"));
+
+//--------------Default function-----------------
+
+function countTo5(count) {
+  if (count === true) {
+    for (let i = 1; i <= 5; i++) {
+      console.log(`count: ${i}`);
+    }
+  }
 }
 
-console.log(getPersion("shelli", 20, "100"));
+// countTo5(true);
+countTo5(false);
+
+//----------------------
+function ratings(rate) {
+  if (rate === 5) {
+    console.log(`high ratings :)`);
+  } else if (rate === 0) {
+    console.log(`low ratings :(`);
+  }
+}
+
+ratings(0);
+ratings(5);
+
+//------exercise------------------------
+
+function multiply(a, b = 1) {
+  return a * b;
+}
+
+console.log(multiply(5));
