@@ -155,58 +155,89 @@
 //-----Spread operator------------------------------
 
 //using functions------------
-function giveMe4(a, b, c, d) {
-  console.log("a", a);
-  console.log("b", b);
-  console.log("c", c);
-  console.log("d", d);
-}
+// function giveMe4(a, b, c, d) {
+//   console.log("a", a);
+//   console.log("b", b);
+//   console.log("c", c);
+//   console.log("d", d);
+// }
 
-const colors = ["red", "green", "blue", "teal"];
+// const colors = ["red", "green", "blue", "teal"];
 
-giveMe4(...colors);
+// giveMe4(...colors);
 
-//using array-----------------
-const strNums = ["one", "two", "three"];
-const moreStrNums = ["four", "five", "six"];
+// //using array-----------------
+// const strNums = ["one", "two", "three"];
+// const moreStrNums = ["four", "five", "six"];
 
-const concat = [...strNums, ...moreStrNums];
-console.log(concat);
-//-------------------
-let peoples = ["shelli", "ashu", "bhoomi"];
-const allPeoples = ["lakshay", ...peoples, "khushi"];
+// const concat = [...strNums, ...moreStrNums];
+// console.log(concat);
+// //-------------------
+// let peoples = ["shelli", "ashu", "bhoomi"];
+// const allPeoples = ["lakshay", ...peoples, "khushi"];
 
-console.log(allPeoples);
+// console.log(allPeoples);
 
 //using objects---------------------------
-const obj1 = { x: 1, y: 2 };
-const obj2 = { z: 3 };
-const obj3 = { ...obj1, ...obj2 };
+// const obj1 = { x: 1, y: 2 };
+// const obj2 = { z: 3 };
+// const obj3 = { ...obj1, ...obj2 };
 
-console.log(obj3);
+// console.log(obj3);
 //------------------
-let person = {
-  name: "huxu",
-  age: 20,
-  gender: "male",
-};
+// let person = {
+//   name: "huxu",
+//   age: 20,
+//   gender: "male",
+// };
 
-const clone = { ...person, work: "programmer", location: "gp" };
-console.log(clone);
+// const clone = { ...person, work: "programmer", location: "gp" };
+// console.log(clone);
 
 //----------Exercise---------------------
 
-let arr = [1, 2, 3];
-let arr2 = [4, 5];
+// let arr = [1, 2, 3];
+// let arr2 = [4, 5];
 
-const cloneArr = [...arr, ...arr2];
-console.log(cloneArr);
+// const cloneArr = [...arr, ...arr2];
+// console.log(cloneArr);
 
 //--------------------
-const user = {
-  name: "shelli",
-  age: 20,
-};
+// const user = {
+//   name: "shelli",
+//   age: 20,
+// };
 
-const cloneuser = { ...user };
-console.log(cloneuser);
+// const cloneuser = { ...user };
+// console.log(cloneuser);
+
+//rest operator------------------------------------------
+
+function user(...username) {
+  console.log(username);
+}
+
+user("Shelli", "Pal", "Ashish", "Pal");
+// ---------------------------------
+function users(x, ...usersData) {
+  console.log(usersData);
+}
+
+user("Shelli", "Pal", "Ashish", "Pal");
+
+//-------------------------------------------
+function person(firstName, lastName, ...hobbies) {
+  console.log("First Name : ", firstName);
+  console.log("last Name : ", lastName);
+  console.log("Hobbies : ", hobbies);
+}
+
+person("Shelli", "WebDev", "Programmming", "Gaming", "Singing");
+
+//----Exercise----------------------------------
+
+function name(...names) {
+  console.log(names);
+}
+
+console.log("shelli", "Ashish", "Lakshaya", 20, "Bhoomi", ["one"]);
