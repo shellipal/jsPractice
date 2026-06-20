@@ -244,35 +244,47 @@
 
 //------------------Destructuring-------------------------------
 
-const foo = ["one", "two"];
+// const foo = ["one", "two"];
 
-const [red, yellow, green, blue] = foo;
-console.log(red);
-console.log(yellow);
-console.log(green);
+// const [red, yellow, green, blue] = foo;
+// console.log(red);
+// console.log(yellow);
+// console.log(green);
 
 //-------------------------------------------------
-let a, b;
+// let a, b;
 
-[a = 5, b = 8] = [1];
-console.log(a);
-console.log(b);
+// [a = 5, b = 8] = [1];
+// console.log(a);
+// console.log(b);
 
 //-------------------------------------------
-function f() {
-  return [1, 2];
-}
+// function f() {
+//   return [1, 2];
+// }
 
-let a, b;
-[a, b] = f();
-console.log(a);
-console.log(b);
+// let a, b;
+// [a, b] = f();
+// console.log(a);
+// console.log(b);
 
 //------------ignoring------------
-function ff() {
-  return [1, 2, 3];
-}
+// function ff() {
+//   return [1, 2, 3];
+// }
 
-const [a, , b] = ff();
+// const [a, , b] = ff();
+// console.log(a);
+// console.log(b);
+
+//Assigning the rest of an array to a variable...................
+
+const [a, ...b] = ["one", "two", "three"];
 console.log(a);
 console.log(b);
+
+//-------exercise-------------------------
+const colors = ["red", "green", "blue", "yellow", "orange"];
+
+const [color1, color2, color3] = colors;
+console.log(color1, color2, color3);
