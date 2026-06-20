@@ -213,31 +213,66 @@
 
 //rest operator------------------------------------------
 
-function user(...username) {
-  console.log(username);
-}
+// function user(...username) {
+//   console.log(username);
+// }
 
-user("Shelli", "Pal", "Ashish", "Pal");
+// user("Shelli", "Pal", "Ashish", "Pal");
 // ---------------------------------
-function users(x, ...usersData) {
-  console.log(usersData);
-}
+// function users(x, ...usersData) {
+//   console.log(usersData);
+// }
 
-user("Shelli", "Pal", "Ashish", "Pal");
+// user("Shelli", "Pal", "Ashish", "Pal");
 
 //-------------------------------------------
-function person(firstName, lastName, ...hobbies) {
-  console.log("First Name : ", firstName);
-  console.log("last Name : ", lastName);
-  console.log("Hobbies : ", hobbies);
-}
+// function person(firstName, lastName, ...hobbies) {
+//   console.log("First Name : ", firstName);
+//   console.log("last Name : ", lastName);
+//   console.log("Hobbies : ", hobbies);
+// }
 
-person("Shelli", "WebDev", "Programmming", "Gaming", "Singing");
+// person("Shelli", "WebDev", "Programmming", "Gaming", "Singing");
 
 //----Exercise----------------------------------
 
-function name(...names) {
-  console.log(names);
+// function name(...names) {
+//   console.log(names);
+// }
+
+// console.log("shelli", "Ashish", "Lakshaya", 20, "Bhoomi", ["one"]);
+
+//------------------Destructuring-------------------------------
+
+const foo = ["one", "two"];
+
+const [red, yellow, green, blue] = foo;
+console.log(red);
+console.log(yellow);
+console.log(green);
+
+//-------------------------------------------------
+let a, b;
+
+[a = 5, b = 8] = [1];
+console.log(a);
+console.log(b);
+
+//-------------------------------------------
+function f() {
+  return [1, 2];
 }
 
-console.log("shelli", "Ashish", "Lakshaya", 20, "Bhoomi", ["one"]);
+let a, b;
+[a, b] = f();
+console.log(a);
+console.log(b);
+
+//------------ignoring------------
+function ff() {
+  return [1, 2, 3];
+}
+
+const [a, , b] = ff();
+console.log(a);
+console.log(b);
