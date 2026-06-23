@@ -291,24 +291,82 @@
 
 //-------object destructuring------------------------------
 
-const student = { name: "shelli", position: "First", rollno: 93 };
-const { name, position, rollno } = student;
-console.log(name);
-console.log(position);
-console.log(rollno);
+// const student = { name: "shelli", position: "First", rollno: 93 };
+// const { name, position, rollno } = student;
+// console.log(name);
+// console.log(position);
+// console.log(rollno);
 
 //---------exercise-------------------------------------
 
+// const person = {
+//   name: "Ashish",
+//   age: 23,
+//   gender: "male",
+//   country: "INDIA",
+// };
+
+// const { name, age, gender, country } = person;
+
+// console.log(name);
+// console.log(age);
+// console.log(gender);
+// console.log(country);
+
+//--------Renaming-------------------------------
+const num = { x: 100, y: 200 };
+// const { x, y } = num;
+const { x: new1, y: new2 } = num;
+
+// console.log(x);
+console.log(new1);
+// console.log(y);
+console.log(new2);
+
+//object destructuring and rest operator--------------------
+let { a, b, ...c } = {
+  a: 100,
+  b: 200,
+  c: 300,
+  d: 400,
+  e: 500,
+};
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+//-----------------function destructuring---------------------
+
 const person = {
-  name: "Ashish",
-  age: 23,
-  gender: "male",
+  name: "Shelli",
+  age: 20,
   country: "INDIA",
 };
 
-const { name, age, gender, country } = person;
+function printPersonInfo({ name, age, country }) {
+  console.log(`Name : ${name}`);
+  console.log(`Age : ${age}`);
+  console.log(`Country : ${country}`);
+}
 
-console.log(name);
-console.log(age);
-console.log(gender);
-console.log(country);
+printPersonInfo(person);
+
+//--------------------------------------------
+let options = {
+  title: "Me menu",
+  items: ["item1", "item2"],
+};
+
+function showMenu({
+  title,
+  width: w = 100,
+  height: h = 200,
+  items: [item1, item2],
+}) {
+  console.log(`${title} ${w} ${h}`);
+  console.log(item1);
+  console.log(item2);
+}
+
+showMenu(options);
