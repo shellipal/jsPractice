@@ -279,12 +279,36 @@
 
 //Assigning the rest of an array to a variable...................
 
-const [a, ...b] = ["one", "two", "three"];
-console.log(a);
-console.log(b);
+// const [a, ...b] = ["one", "two", "three"];
+// console.log(a);
+// console.log(b);
 
 //-------exercise-------------------------
-const colors = ["red", "green", "blue", "yellow", "orange"];
+// const colors = ["red", "green", "blue", "yellow", "orange"];
 
-const [color1, color2, color3] = colors;
-console.log(color1, color2, color3);
+// const [color1, color2, color3] = colors;
+// console.log(color1, color2, color3);
+
+//-------object destructuring------------------------------
+
+const student = { name: "shelli", position: "First", rollno: 93 };
+const { name, position, rollno } = student;
+console.log(name);
+console.log(position);
+console.log(rollno);
+
+//---------exercise-------------------------------------
+
+const person = {
+  name: "Ashish",
+  age: 23,
+  gender: "male",
+  country: "INDIA",
+};
+
+const { name, age, gender, country } = person;
+
+console.log(name);
+console.log(age);
+console.log(gender);
+console.log(country);
