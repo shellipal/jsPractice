@@ -314,59 +314,75 @@
 // console.log(country);
 
 //--------Renaming-------------------------------
-const num = { x: 100, y: 200 };
+// const num = { x: 100, y: 200 };
 // const { x, y } = num;
-const { x: new1, y: new2 } = num;
+// const { x: new1, y: new2 } = num;
 
 // console.log(x);
-console.log(new1);
+// console.log(new1);
 // console.log(y);
-console.log(new2);
+// console.log(new2);
 
 //object destructuring and rest operator--------------------
-let { a, b, ...c } = {
-  a: 100,
-  b: 200,
-  c: 300,
-  d: 400,
-  e: 500,
-};
+// let { a, b, ...c } = {
+//   a: 100,
+//   b: 200,
+//   c: 300,
+//   d: 400,
+//   e: 500,
+// };
 
-console.log(a);
-console.log(b);
-console.log(c);
+// console.log(a);
+// console.log(b);
+// console.log(c);
 
 //-----------------function destructuring---------------------
 
-const person = {
-  name: "Shelli",
-  age: 20,
-  country: "INDIA",
-};
+// const person = {
+//   name: "Shelli",
+//   age: 20,
+//   country: "INDIA",
+// };
 
-function printPersonInfo({ name, age, country }) {
-  console.log(`Name : ${name}`);
-  console.log(`Age : ${age}`);
-  console.log(`Country : ${country}`);
-}
+// function printPersonInfo({ name, age, country }) {
+//   console.log(`Name : ${name}`);
+//   console.log(`Age : ${age}`);
+//   console.log(`Country : ${country}`);
+// }
 
-printPersonInfo(person);
+// printPersonInfo(person);
 
 //--------------------------------------------
-let options = {
-  title: "Me menu",
-  items: ["item1", "item2"],
-};
+// let options = {
+//   title: "Me menu",
+//   items: ["item1", "item2"],
+// };
 
-function showMenu({
-  title,
-  width: w = 100,
-  height: h = 200,
-  items: [item1, item2],
-}) {
-  console.log(`${title} ${w} ${h}`);
-  console.log(item1);
-  console.log(item2);
-}
+// function showMenu({
+//   title,
+//   width: w = 100,
+//   height: h = 200,
+//   items: [item1, item2],
+// }) {
+//   console.log(`${title} ${w} ${h}`);
+//   console.log(item1);
+//   console.log(item2);
+// }
 
-showMenu(options);
+// showMenu(options);
+
+//-----Nested destructuring---------------
+const songs = [
+  {
+    name: "Warning",
+    singer: " ADDI KALYAN",
+  },
+  { name: "Maruti", singer: "Dhanda Nyoliwala" },
+  {
+    name: "Not Guilty",
+    singer: "Dhanda Nyoliwala",
+  },
+];
+
+const [, { singer: s }] = songs;
+console.log(s);
